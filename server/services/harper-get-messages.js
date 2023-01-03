@@ -15,9 +15,9 @@ function harperGetMessages(room) {
     url: dbUrl,
     headers: {
       'Content-Type': 'application/json',
-      Authorization: dbPw,
+      'Authorization': 'Basic ' + dbPw,
     },
-    data: data,
+    data: data
   };
 
   return new Promise((resolve, reject) => {
